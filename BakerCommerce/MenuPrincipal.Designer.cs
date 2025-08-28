@@ -40,7 +40,7 @@
             // btnComandas
             // 
             this.btnComandas.Location = new System.Drawing.Point(99, 174);
-            this.btnComandas.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnComandas.Margin = new System.Windows.Forms.Padding(8);
             this.btnComandas.Name = "btnComandas";
             this.btnComandas.Size = new System.Drawing.Size(242, 85);
             this.btnComandas.TabIndex = 0;
@@ -51,7 +51,7 @@
             // btnProdutos
             // 
             this.btnProdutos.Location = new System.Drawing.Point(357, 174);
-            this.btnProdutos.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnProdutos.Margin = new System.Windows.Forms.Padding(8);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Size = new System.Drawing.Size(234, 85);
             this.btnProdutos.TabIndex = 1;
@@ -61,7 +61,7 @@
             // btnCaixa
             // 
             this.btnCaixa.Location = new System.Drawing.Point(107, 288);
-            this.btnCaixa.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnCaixa.Margin = new System.Windows.Forms.Padding(8);
             this.btnCaixa.Name = "btnCaixa";
             this.btnCaixa.Size = new System.Drawing.Size(484, 54);
             this.btnCaixa.TabIndex = 2;
@@ -72,7 +72,7 @@
             // btnUsuário
             // 
             this.btnUsuário.Location = new System.Drawing.Point(107, 348);
-            this.btnUsuário.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnUsuário.Margin = new System.Windows.Forms.Padding(8);
             this.btnUsuário.Name = "btnUsuário";
             this.btnUsuário.Size = new System.Drawing.Size(484, 54);
             this.btnUsuário.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             this.lblDescrição.AutoSize = true;
             this.lblDescrição.Font = new System.Drawing.Font("Futura Bk BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescrição.Location = new System.Drawing.Point(94, 95);
+            this.lblDescrição.Location = new System.Drawing.Point(80, 93);
             this.lblDescrição.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblDescrição.Name = "lblDescrição";
             this.lblDescrição.Size = new System.Drawing.Size(545, 25);
@@ -116,7 +116,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.ResumeLayout(false);

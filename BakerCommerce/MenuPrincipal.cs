@@ -12,9 +12,15 @@ namespace BakerCommerce
 {
     public partial class MenuPrincipal : Form
     {
-        public MenuPrincipal()
+        // Variaveis globais:
+        Model.Usuario usuario = new Model.Usuario();
+
+        public MenuPrincipal(Model.Usuario usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
+            lblDescrição.Text = $"Ollá {usuario.NomeCompleto},\nEscolha u7ma opção abaixo:";
+
         }
 
         private void button3_Click(object sender, EventArgs e)

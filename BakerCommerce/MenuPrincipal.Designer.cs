@@ -78,6 +78,7 @@
             this.btnUsuário.TabIndex = 3;
             this.btnUsuário.Text = "Usuário";
             this.btnUsuário.UseVisualStyleBackColor = true;
+            this.btnUsuário.Click += new System.EventHandler(this.btnUsuário_Click);
             // 
             // lblMenuPrincipalPadarosa
             // 

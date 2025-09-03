@@ -41,15 +41,15 @@
             this.txbNomeCadastro = new System.Windows.Forms.TextBox();
             this.grbEditar = new System.Windows.Forms.GroupBox();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbSenhaEditar = new System.Windows.Forms.TextBox();
+            this.txbEmailEditar = new System.Windows.Forms.TextBox();
             this.lblSenhaEditar = new System.Windows.Forms.Label();
             this.lblEmailEditar = new System.Windows.Forms.Label();
             this.lblNomeEditar = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbNomeEditar = new System.Windows.Forms.TextBox();
             this.grbApagar = new System.Windows.Forms.GroupBox();
             this.btnApagar = new System.Windows.Forms.Button();
-            this.lblDescriçãoApagar = new System.Windows.Forms.Label();
+            this.lblDescricaoApagar = new System.Windows.Forms.Label();
             this.lblGerenciadordeUsuários = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
@@ -72,6 +72,7 @@
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.Size = new System.Drawing.Size(455, 177);
             this.dgvUsuarios.TabIndex = 0;
+            this.dgvUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellClick);
             // 
             // grbCadastro
             // 
@@ -160,12 +161,12 @@
             // grbEditar
             // 
             this.grbEditar.Controls.Add(this.btnEditar);
-            this.grbEditar.Controls.Add(this.textBox1);
-            this.grbEditar.Controls.Add(this.textBox2);
+            this.grbEditar.Controls.Add(this.txbSenhaEditar);
+            this.grbEditar.Controls.Add(this.txbEmailEditar);
             this.grbEditar.Controls.Add(this.lblSenhaEditar);
             this.grbEditar.Controls.Add(this.lblEmailEditar);
             this.grbEditar.Controls.Add(this.lblNomeEditar);
-            this.grbEditar.Controls.Add(this.textBox3);
+            this.grbEditar.Controls.Add(this.txbNomeEditar);
             this.grbEditar.Enabled = false;
             this.grbEditar.Location = new System.Drawing.Point(288, 291);
             this.grbEditar.Name = "grbEditar";
@@ -182,20 +183,21 @@
             this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // textBox1
+            // txbSenhaEditar
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 20);
-            this.textBox1.TabIndex = 5;
+            this.txbSenhaEditar.Location = new System.Drawing.Point(94, 99);
+            this.txbSenhaEditar.Name = "txbSenhaEditar";
+            this.txbSenhaEditar.Size = new System.Drawing.Size(127, 20);
+            this.txbSenhaEditar.TabIndex = 5;
             // 
-            // textBox2
+            // txbEmailEditar
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 20);
-            this.textBox2.TabIndex = 4;
+            this.txbEmailEditar.Location = new System.Drawing.Point(94, 64);
+            this.txbEmailEditar.Name = "txbEmailEditar";
+            this.txbEmailEditar.Size = new System.Drawing.Size(127, 20);
+            this.txbEmailEditar.TabIndex = 4;
             // 
             // lblSenhaEditar
             // 
@@ -224,17 +226,17 @@
             this.lblNomeEditar.TabIndex = 1;
             this.lblNomeEditar.Text = "Nome Completo:";
             // 
-            // textBox3
+            // txbNomeEditar
             // 
-            this.textBox3.Location = new System.Drawing.Point(94, 38);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 20);
-            this.textBox3.TabIndex = 0;
+            this.txbNomeEditar.Location = new System.Drawing.Point(94, 38);
+            this.txbNomeEditar.Name = "txbNomeEditar";
+            this.txbNomeEditar.Size = new System.Drawing.Size(127, 20);
+            this.txbNomeEditar.TabIndex = 0;
             // 
             // grbApagar
             // 
             this.grbApagar.Controls.Add(this.btnApagar);
-            this.grbApagar.Controls.Add(this.lblDescriçãoApagar);
+            this.grbApagar.Controls.Add(this.lblDescricaoApagar);
             this.grbApagar.Location = new System.Drawing.Point(12, 545);
             this.grbApagar.Name = "grbApagar";
             this.grbApagar.Size = new System.Drawing.Size(523, 54);
@@ -250,15 +252,16 @@
             this.btnApagar.TabIndex = 1;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
-            // lblDescriçãoApagar
+            // lblDescricaoApagar
             // 
-            this.lblDescriçãoApagar.AutoSize = true;
-            this.lblDescriçãoApagar.Location = new System.Drawing.Point(6, 29);
-            this.lblDescriçãoApagar.Name = "lblDescriçãoApagar";
-            this.lblDescriçãoApagar.Size = new System.Drawing.Size(171, 13);
-            this.lblDescriçãoApagar.TabIndex = 0;
-            this.lblDescriçãoApagar.Text = "Selecione um usuario para apagar:";
+            this.lblDescricaoApagar.AutoSize = true;
+            this.lblDescricaoApagar.Location = new System.Drawing.Point(6, 29);
+            this.lblDescricaoApagar.Name = "lblDescricaoApagar";
+            this.lblDescricaoApagar.Size = new System.Drawing.Size(171, 13);
+            this.lblDescricaoApagar.TabIndex = 0;
+            this.lblDescricaoApagar.Text = "Selecione um usuario para apagar:";
             // 
             // lblGerenciadordeUsuários
             // 
@@ -320,15 +323,15 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox grbEditar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbSenhaEditar;
+        private System.Windows.Forms.TextBox txbEmailEditar;
         private System.Windows.Forms.Label lblSenhaEditar;
         private System.Windows.Forms.Label lblEmailEditar;
         private System.Windows.Forms.Label lblNomeEditar;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbNomeEditar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox grbApagar;
-        private System.Windows.Forms.Label lblDescriçãoApagar;
+        private System.Windows.Forms.Label lblDescricaoApagar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Label lblGerenciadordeUsuários;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -185,6 +185,7 @@ namespace BakerCommerce
                 {
                     MessageBox.Show("Usuário modificado com sucesso!", "Show!",
                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetarCampos();
 
                 }
                 else

@@ -102,7 +102,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(29, 144);
+            this.btnCadastrar.Location = new System.Drawing.Point(21, 143);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(163, 36);
             this.btnCadastrar.TabIndex = 6;
@@ -187,7 +187,7 @@
             // 
             // txbSenhaEditar
             // 
-            this.txbSenhaEditar.Location = new System.Drawing.Point(94, 99);
+            this.txbSenhaEditar.Location = new System.Drawing.Point(94, 92);
             this.txbSenhaEditar.Name = "txbSenhaEditar";
             this.txbSenhaEditar.Size = new System.Drawing.Size(127, 20);
             this.txbSenhaEditar.TabIndex = 5;
@@ -246,7 +246,7 @@
             // 
             // btnApagar
             // 
-            this.btnApagar.Location = new System.Drawing.Point(424, 12);
+            this.btnApagar.Location = new System.Drawing.Point(424, 18);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(93, 30);
             this.btnApagar.TabIndex = 1;
